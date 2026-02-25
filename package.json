@@ -1,0 +1,11 @@
+{
+  "name": "streamvault",
+  "version": "3.2.0",
+  "description": "StreamVault — Premium IPTV Player with CORS Proxy & MPEG-TS Support",
+  "private": true,
+  "scripts": {
+    "start": "npx serve public -l 3000",
+    "build": "echo 'Static site — no build required'"
+  },
+  "license": "MIT"
+}
