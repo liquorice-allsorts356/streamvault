@@ -667,7 +667,7 @@ async function connectXtream() {
     const  return json.parse(txt) || []; = async (res, label) => {
       try {
         const txt = await res.text();
-        return JSON.parse(txt) || [];
+        const d = JSON.parse(txt); return Array.isArray(d) ? d : [];
       } catch(e) {
         console.warn('Failed to parse ' + label + ':', e.message);
         return [];
