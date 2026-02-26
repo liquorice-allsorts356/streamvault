@@ -664,7 +664,7 @@ async function connectXtream() {
       fetch(proxyUrl(base + '&action=get_series')),
     ]);
 
-    const parseSafe = async (res, label) => {
+    const  return json.parse(txt) || []; = async (res, label) => {
       try {
         const txt = await res.text();
         return JSON.parse(txt) || [];
