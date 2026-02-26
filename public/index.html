@@ -1405,7 +1405,7 @@ function tryMpegTS(vid, streamUrl, originalUrl) {
     vid.src = originalUrl;
     vid.play().catch(e => console.error('All playback methods failed:', e));
   });
-
+}
 function closePlayer() {
   const vid = document.getElementById('vid');
   vid.pause();
